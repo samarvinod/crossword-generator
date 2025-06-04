@@ -1,11 +1,38 @@
 # Crossword Generator
 
-This is a Crossword Generator, where the user can provide a list of words to create a crossword puzzle with. They can provide the words through the terminal or even an input file with a list of words that you want the crossword to include. Moreover, the user has an option to provide a file for the program to print the results to. The generator will attempt to place all the words into the puzzle, but will notify them if it cannot place the word. The generator gives the user hints to each of the words. The hints are scrambled versions of the words. 
+This is a Crossword Generator program that creates crossword puzzles based on a list of words provided by the user. Users can input words manually through the terminal or supply an input file containing the words they’d like to include in the puzzle. The program will attempt to place all the words into the crossword grid. If a word cannot be placed, the user will be notified.
 
-Note: There is a 15 letter limit for each word given to the program.
+Each word in the puzzle comes with a hint, which is a scrambled version of the word itself.
 
-Instructions:
-1. Run the command 'make' in the terminal to create an executable file.
-2. Run the executable './runcrossword', then provide a word and press 'Enter', and repeat. Type '.' to stop.
-3. If you would like to provide an input file, run the executable './runcrossword' followed by an input file. For example: './runcrossword input.txt'.
-5. Optionally, you can run './runcrossword input.txt output.txt' to print out the results of the crossword - made with words from input.txt - into output.txt instead of the terminal.
+Note: Each word must be no longer than 15 letters.
+
+## Features
+✅ Accepts words from terminal input or a file.
+✅ Optional output file to save the generated puzzle.
+✅ Provides scrambled hints for each word.
+✅ Notifies the user if a word cannot be placed.
+
+## Instructions
+### 1. Build the program:
+```bash
+make
+```
+
+### 2. Run the program interactively:
+```bash
+./runcrossword
+```
+- Enter a word, press Enter, and repeat as needed.
+- Type a single period . to finish entering words.
+
+### 3. Run the program with an input file:
+```bash
+./runcrossword input.txt
+```
+- This uses the words in input.txt to generate the crossword.
+
+### 4. Run the program with both input and output files:
+```bash
+./runcrossword input.txt output.txt
+```
+- This uses the words in input.txt and saves the crossword to output.txt instead of displaying it in the terminal.
