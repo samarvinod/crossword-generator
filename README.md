@@ -7,10 +7,10 @@ Each word in the puzzle comes with a hint, which is a scrambled version of the w
 Note: Each word must be no longer than 15 letters.
 
 ## Features
-✅ Accepts words from terminal input or a file.
-✅ Optional output file to save the generated puzzle.
-✅ Provides scrambled hints for each word.
-✅ Notifies the user if a word cannot be placed.
+- ✅ Accepts words from terminal input or a file.
+- ✅ Optional output file to save the generated puzzle.
+- ✅ Provides scrambled hints for each word.
+- ✅ Notifies the user if a word cannot be placed.
 
 ## Instructions
 ### 1. Build the program:
